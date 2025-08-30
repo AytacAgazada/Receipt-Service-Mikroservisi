@@ -22,6 +22,6 @@ public interface ReceiptMapper {
     @Mapping(source = "drugs", target = "drugs")
     ReceiptResponseDto toResponseDto(Receipt receipt);
 
-    // Əlavə olaraq, List<Receipt> obyektini List<ReceiptResponseDto>-ya çevirmə metodu
+    // List<Receipt> obyektini List<ReceiptResponseDto>-ya çevirmə metodu
     List<ReceiptResponseDto> toResponseDtoList(List<Receipt> receipts);
 }

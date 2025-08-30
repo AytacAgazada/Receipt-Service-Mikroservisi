@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface DrugRepository extends JpaRepository<Drug, Long> {
 
-
     List<Drug> findByPrice(Double price);
+
 }

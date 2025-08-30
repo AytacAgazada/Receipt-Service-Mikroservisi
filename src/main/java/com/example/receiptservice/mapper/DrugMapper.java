@@ -12,7 +12,7 @@ public interface DrugMapper {
 
     DrugMapper INSTANCE = Mappers.getMapper(DrugMapper.class);
 
-    @Mapping(target = "receipt", ignore = true) // 'receipt' sahəsini yox sayırıq, çünki bu, 'Receipt' tərəfindən idarə olunur.
+    @Mapping(target = "receipt", ignore = true) // receipt sahesini yox sayiriq Receipt tərəfindən idare olunacaq.
     Drug toEntity(DrugDTO drugDto);
 
     DrugResponseDto toResponseDto(Drug drug);
